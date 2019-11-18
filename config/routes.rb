@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :games do
     resources :locations
     resources :weapons
+    resources :suspects
   end
   root 'welcome#index'
 end

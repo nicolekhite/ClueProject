@@ -1,0 +1,12 @@
+<%= form_for([@game, @game.suspects.build]) do |f| %>
+  <p>
+    <%= f.label :susName, "Suspect:" %><br>
+    <%= f.select :susName, [['Mrs. Peacock','peacock'],['Miss Scarlett','scarlett'],
+      ['Rev. Green','green'], ['Colonel Mustard','mustard'], ['Professor Plum','plum'], ['Mrs. White','white']] %>
+  </p>
+  
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

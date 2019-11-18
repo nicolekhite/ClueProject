@@ -1,6 +1,6 @@
 <%= form_for([@game, @game.weapons.build]) do |f| %>
   <p>
-    <%= f.label :wepName %><br>
+    <%= f.label :wepName, "Weapon:" %><br>
     <%= f.select :wepName, [['Gun','gun'],['Pipe','pipe'],['Knife','knife'], ['Candlestick','candlestick'], ['Rope','rope'], ['Rope','rope']] %>
   </p>
   
