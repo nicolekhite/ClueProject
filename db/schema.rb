@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_18_091809) do
+ActiveRecord::Schema.define(version: 2019_11_18_100158) do
 
   create_table "games", force: :cascade do |t|
     t.string "name"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 2019_11_18_091809) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["game_id"], name: "index_locations_on_game_id"
+  end
+
+  create_table "weapons", force: :cascade do |t|
+    t.string "wepName"
+    t.integer "game_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_weapons_on_game_id"
   end
 
 end

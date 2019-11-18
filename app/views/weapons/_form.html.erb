@@ -1,0 +1,11 @@
+<%= form_for([@game, @game.weapons.build]) do |f| %>
+  <p>
+    <%= f.label :wepName %><br>
+    <%= f.select :wepName, [['Gun','gun'],['Pipe','pipe'],['Knife','knife'], ['Candlestick','candlestick'], ['Rope','rope'], ['Rope','rope']] %>
+  </p>
+  
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
