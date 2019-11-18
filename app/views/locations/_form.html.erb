@@ -1,0 +1,12 @@
+<%= form_for([@game, @game.locations.build]) do |f| %>
+  <p>
+    <%= f.label :locName %><br>
+    <%= f.select :locName, [['Library','library'],['Study','study'],['Hall','hall'], ['Lounge','lounge'], 
+      ['Dining Room','diningRoom'], ['Kitchen','kitchen'], ['Ballroom','Ballroom'], ['Conservatory','Conservatory'], ['Billard Room','billardRoom']] %>
+  </p>
+  
+  
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

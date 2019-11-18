@@ -8,4 +8,11 @@
     <%= @game.date %>
 </p>
 
+<h2>Locations</h2>
+<%= render @game.locations %>
+
+<h2>Add a Location:</h2>
+<%=  render 'locations/form' %>
+
+
 <%= link_to 'Game Saves List', games_path %>
