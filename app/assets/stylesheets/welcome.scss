@@ -1,0 +1,88 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* --------------- Navigation Bar styling --------------- */
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background-color: maroon;
+    color:white;
+    width: 100%;
+    padding: 15px 0px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #AE0000;
+    color: white;
+    border-bottom: 2px solid black;
+}
+body{
+    background-color: seashell;
+}
+.menuOption{
+    margin: 20px 30px;
+    color: inherit;
+}
+.menuOption:hover{
+    color: yellow;
+}
+
+.center-text{
+    text-align: center;
+}
+
+/* --------------- Styling --------------- */
+.bg-section{
+    padding: 20px 0;
+    width: 70%;
+    margin: 20px auto;
+    left: 50%;
+}
+
+.genButton{
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: maroon;
+    padding: 10px 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+}
+
+body{
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.container{
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.card{
+    max-width: 350px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.card-cont{
+    padding: 0 15%;   
+}
+
+.row {
+  display: flex;
+  //flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
