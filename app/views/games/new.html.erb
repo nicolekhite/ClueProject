@@ -1,21 +1,11 @@
 <h1>New Game</h1>
     <%= form_for :game, url: games_path do |f| %>
       <p>
-        <%= f.label :location %><br>
-        <%= f.select :location, [['Library','library'],['Study','study'],['Hall','hall'], ['Lounge','lounge'], 
-          ['Dining Room','diningRoom'], ['Kitchen','kitchen'], ['Ballroom','Ballroom'], ['Conservatory','Conservatory'], ['Billard Room','billardRoom']] %>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
       </p>
-      
-      <p>
-        <%= f.label :weapon %><br>
-        <%= f.select :weapon, [['Gun','gun'],['Pipe','pipe'],['Knife','knife'], ['Candlestick','candlestick'], ['Rope','rope'], ['Rope','rope']] %>
-      </p>
-  
-      <p>
-        <%= f.label :killer %><br>
-        <%= f.text_field :killer %>
-      </p>
- 
+       
+       <%= f.date_field :date %>
       <p>
         <%= f.submit %>
       </p>
