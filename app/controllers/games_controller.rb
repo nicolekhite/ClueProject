@@ -3,9 +3,10 @@ class GamesController < ApplicationController
         @games = Game.all
     end
     def new
+        @game = Game.new
     end
     def create
-        @game = Game.new(params[:article])
+        @game = Game.new(game_params)
         @game.save
         redirect_to @game
     end
