@@ -6,4 +6,19 @@ Rails.application.routes.draw do
     resources :suspects
   end
   root 'welcome#index'
+  
+  get 'games/index'
+  root 'games#index'
+  
+  get 'games/new'
+  root 'games#new'
+  
+  get 'welcome/suspects'
+  root 'welcome#suspects'
+  
+  get 'welcome/weapons'
+  root 'welcome#weapons'
+  
+  get 'welcome/locations'
+  root 'welcome#locations'
 end
