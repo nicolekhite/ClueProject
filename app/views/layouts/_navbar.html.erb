@@ -3,7 +3,7 @@
 </div>
 <nav>
     <%= link_to "Home", "/welcome/index", :class => "menuOption" %>
-    <%= link_to "My Trackers", controller: 'games', :class => "menuOption" %>
-    <%= link_to "New Tracker", new_game_path, :class => "menuOption"%>
+    <%= link_to "My Trackers", "/games", :class => "menuOption" %>
+    <%= link_to "New Tracker", "/games/new", :class => "menuOption"%>
     <%= link_to "Suspects", "/welcome/suspects", :class => "menuOption"%>
 </nav>
