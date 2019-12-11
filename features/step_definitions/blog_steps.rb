@@ -18,3 +18,4 @@ Then("I should see the {string} field") do |string|
   expect(page).to have_content(string)
 end
 
+
