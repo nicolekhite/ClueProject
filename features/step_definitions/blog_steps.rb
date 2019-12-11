@@ -18,4 +18,8 @@ Then("I should see the {string} field") do |string|
   expect(page).to have_content(string)
 end
 
+When("I click the {string} button") do |string|
+  click_button(string)
+end
+
 
