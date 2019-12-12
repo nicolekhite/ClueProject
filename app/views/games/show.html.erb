@@ -1,3 +1,4 @@
+<div class="bg-section  container">
 <p>
     <strong>Game Name:</strong>
     <%= @game.name %>
@@ -7,25 +8,30 @@
     <strong>Game Date:</strong>
     <%= @game.date %>
 </p>
+<div class="row">
+    <div>
+        <h2>Suspects</h2>
+        <%= render @game.suspects %>
 
-<h2>Suspects</h2>
-<%= render @game.suspects %>
+        <h2>Add a Suspect:</h2>
+        <%=  render 'suspects/form' %>
+    </div>
+    <div>
+        <h2>Weapons</h2>
+        <%= render @game.weapons %>
 
-<h2>Add a Suspect:</h2>
-<%=  render 'suspects/form' %>
+        <h2>Add a Weapon:</h2>
+        <%=  render 'weapons/form' %>
+    </div>
 
-<h2>Weapons</h2>
-<%= render @game.weapons %>
+    <div>
+        <h2>Locations</h2>
+        <%= render @game.locations %>
 
-<h2>Add a Weapon:</h2>
-<%=  render 'weapons/form' %>
-
-
-<h2>Locations</h2>
-<%= render @game.locations %>
-
-<h2>Add a Location:</h2>
-<%=  render 'locations/form' %>
-
+        <h2>Add a Location:</h2>
+        <%=  render 'locations/form' %>
+    </div>
+</div>
 
 <%= link_to 'Game Saves List', games_path %>
+</div>

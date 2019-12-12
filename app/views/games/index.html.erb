@@ -1,23 +1,25 @@
 <div class="bg-section center-text container">
-  <h1>Listing articles</h1>
+  <h1>Games</h1>
  
-<table class="center-text container">
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @games.each do |game| %>
+<div class="row"> 
+  <table class="container ">
     <tr>
-      <td><%= game.name %></td>
-      <td><%= game.date %></td>
-      <td><%= link_to 'Show', game_path(game) %></td>
-      <td><%= link_to 'Edit', edit_game_path(game) %></td>
-      <td><%= link_to 'Destroy',
-                                game_path(game),
-                                method: :delete,
-                                data: { confirm: 'Are you sure?' } %></td>
+      <th>Title</th>
+      <th>Text</th>
     </tr>
-  <% end %>
-</table>
+ 
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.name %></td>
+        <td><%= game.date %></td>
+        <td><%= link_to 'Show', game_path(game) %></td>
+        <td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <td><%= link_to 'Destroy',
+                                  game_path(game),
+                                  method: :delete,
+                                  data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
 </div>
