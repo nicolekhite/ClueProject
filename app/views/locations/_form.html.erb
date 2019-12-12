@@ -1,8 +1,9 @@
 <%= form_for([@game, @game.locations.build]) do |f| %>
   <p>
     <%= f.label :locName, "Location:" %><br>
-    <%= f.select :locName, [['Library','library'],['Study','study'],['Hall','hall'], ['Lounge','lounge'], 
-      ['Dining Room','diningRoom'], ['Kitchen','kitchen'], ['Ballroom','Ballroom'], ['Conservatory','Conservatory'], ['Billard Room','billardRoom']] %>
+    <%= f.select :locName, [['Library','Library'],['Study','Study'],['Hall','Hall'], ['Lounge','Lounge'], 
+      ['Dining Room','Dining Room'], ['Kitchen','Kitchen'], ['Ballroom','Ballroom'], ['Conservatory','Conservatory'],
+      ['Billard Room','Billiard Room']] %>
   </p>
   
   
