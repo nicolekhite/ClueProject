@@ -3,5 +3,5 @@ Feature: Locate previous game entry
     Given I am on the home page 
     When I click on the "My Trackers" link
     Then I should see a "My Trackers" page
-    And I should see the "Title" field
-    And I should see the "Text" field
+    And I should see the "Game Name" field
+    And I should see the "Date" field
